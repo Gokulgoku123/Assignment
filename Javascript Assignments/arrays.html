@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var courses = ['Java','Python','Angular','C++'];
+        var username = prompt('Enter the name');
+        var course = prompt('Enter the course');
+        var bool = false;
+
+        document.write(`Welcome ${username}`+"<br>")
+        for (const index in courses) {
+            if (course == courses[index]) {
+                bool = true;
+                break;
+            }
+        }
+        if(bool == true){
+            document.write(`you have selected ${course} course`+"<br>");
+            document.write(`The course fee is 2000`+"<br>");
+        }
+        else{
+            document.write(`The course is not available`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

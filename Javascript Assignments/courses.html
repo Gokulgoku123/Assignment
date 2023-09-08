@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showDetails(){
+            var course = document.getElementById("courses").value;
+            document.getElementById("divElement").innerHTML=`You have selected ${course}`;
+        }
+    </script>
+</head>
+<body>
+    Select Course : 
+    <select name="courses" id="courses" onchange="showDetails()">
+        <option value="">--Select--</option>
+        <option value="Java">Java</option>
+        <option value="Spring">Spring</option>
+        <option value="Angular">Angular</option>
+        <option value="React">React</option>
+    </select><br><br>
+    <div id="divElement">
+
+    </div>
+</body>
+</html>
